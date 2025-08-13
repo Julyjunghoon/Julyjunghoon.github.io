@@ -13,90 +13,98 @@
             padding: 30px;
             max-width: 800px;
             margin: 0 auto;
-            color: #555;
-            background-color: #f7f3f2; /* 부드러운 연한 베이지색 */
+            color: #333;
+            background-color: #e6f7ff; /* 맑은 하늘색 배경 */
         }
         
         h1 {
             text-align: center;
-            color: #8c7676; /* 부드러운 갈색 */
+            color: #0077b6; /* 짙은 바다색 */
             font-weight: 700;
             font-size: 2.5rem;
             margin-bottom: 40px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #a0a09e; /* 연한 회색 */
+            color: #00b4d8; /* 시원한 아쿠아색 */
             font-weight: 700;
-            font-size: 1.5rem;
-            border-bottom: 2px solid #e0e0df; /* 연한 구분선 */
+            font-size: 1.6rem;
+            border-bottom: 3px solid #90e0ef; /* 밝은 물결색 구분선 */
             padding-bottom: 10px;
-            margin-top: 30px;
-            margin-bottom: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
         }
 
         .day {
             background-color: #ffffff;
-            border-radius: 15px;
-            padding: 25px 35px;
+            border-radius: 20px; /* 더 둥근 모서리 */
+            padding: 30px 40px;
             margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
         }
 
         .day:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
         }
 
         .schedule-item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 20px;
             padding: 10px 0;
+            position: relative;
         }
 
         .time {
             font-weight: 700;
-            color: #d1b5a5; /* 따뜻한 연갈색 */
+            color: #0077b6; /* 짙은 바다색 */
             width: 120px;
             flex-shrink: 0;
-            position: relative;
+            font-size: 1.1rem;
         }
         
         .time::before {
-            content: '🗓️'; /* 이모지 아이콘 추가 */
+            content: '🌊'; /* 물결 이모지 아이콘 */
             position: absolute;
-            left: -30px;
-            top: 0;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
         }
 
         .description {
             margin-left: 20px;
             font-size: 1.1rem;
-            color: #5d5d5d; /* 진한 회색 */
+            color: #333;
+            border-left: 2px solid #caf0f8; /* 설명 부분에 연한 파란색 세로선 */
+            padding-left: 15px;
         }
 
         ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 30px; /* 이모지 때문에 왼쪽 여백 추가 */
+        }
+        
+        a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .other-items {
             margin-top: 50px;
-            padding: 25px;
-            background-color: #fcfcfc;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-        }
-
-        .other-items ul {
-            padding-left: 20px;
-        }
-        
-        .other-items li {
-            font-style: italic;
-            color: #888;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -187,15 +195,10 @@
             <li>야간 낚시</li>
             <li>남포동/자갈치 투어</li>
             <li>수영만 요트투어 + 더베이101 + 해운대 밤바다</li>
-            <li>인어공주 뮤지컬(일요일 11:00,13:00,15:00) - 부산예술회관</li>
-            <li>(링크)[https://busandabom.net/play/view.nm?menuCd=6&lang=ko&url=play&prg_cd=120&res_no=2025070032&playoftoday=Y] </li>            
+            <li><a href="https://busandabom.net/play/view.nm?menuCd=6&lang=ko&url=play&prg_cd=120&res_no=2025070032&playoftoday=Y">인어공주 뮤지컬(일요일 11:00,13:00,15:00) - 부산예술회관</a></li>
             <li>광안리 드론쇼</li>
         </ul>
     </div>
 
 </body>
-
 </html>
-
-
-
