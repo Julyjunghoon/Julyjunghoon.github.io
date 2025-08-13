@@ -14,32 +14,36 @@
             max-width: 800px;
             margin: 0 auto;
             color: #333;
-            background-color: #e6f7ff; /* 맑은 하늘색 배경 */
+            background-color: #005086; /* 배경 이미지 로딩 전을 위한 색상 */
+            background-image: url('https://placehold.co/1920x1080/63c5da/fff?text=Busan+Beach'); /* 배경 이미지 URL */
+            background-size: cover; /* 배경이 화면을 가득 채우도록 설정 */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         
         h1 {
             text-align: center;
-            color: #0077b6; /* 짙은 바다색 */
+            color: #ffffff; /* 흰색 글씨로 변경 */
             font-weight: 700;
             font-size: 2.5rem;
             margin-bottom: 40px;
             letter-spacing: 3px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
 
         h2 {
-            color: #00b4d8; /* 시원한 아쿠아색 */
+            color: #0077b6; /* 짙은 바다색 */
             font-weight: 700;
             font-size: 1.6rem;
-            border-bottom: 3px solid #90e0ef; /* 밝은 물결색 구분선 */
+            border-bottom: 3px solid #90e0ef;
             padding-bottom: 10px;
             margin-top: 40px;
             margin-bottom: 25px;
         }
 
         .day {
-            background-color: #ffffff;
-            border-radius: 20px; /* 더 둥근 모서리 */
+            background-color: rgba(255, 255, 255, 0.85); /* 약간 투명한 흰색 */
+            border-radius: 20px;
             padding: 30px 40px;
             margin-bottom: 30px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
@@ -61,14 +65,14 @@
 
         .time {
             font-weight: 700;
-            color: #0077b6; /* 짙은 바다색 */
+            color: #004d70; /* 짙은 바다색 */
             width: 120px;
             flex-shrink: 0;
             font-size: 1.1rem;
         }
         
         .time::before {
-            content: '🌊'; /* 물결 이모지 아이콘 */
+            content: '🌊';
             position: absolute;
             left: -35px;
             top: 50%;
@@ -80,13 +84,23 @@
             margin-left: 20px;
             font-size: 1.1rem;
             color: #333;
-            border-left: 2px solid #caf0f8; /* 설명 부분에 연한 파란색 세로선 */
+            border-left: 2px solid #caf0f8;
             padding-left: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .schedule-img {
+            margin-left: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 150px;
+            height: auto;
         }
 
         ul {
             list-style-type: none;
-            padding-left: 30px; /* 이모지 때문에 왼쪽 여백 추가 */
+            padding-left: 30px;
         }
         
         a {
@@ -102,7 +116,7 @@
         .other-items {
             margin-top: 50px;
             padding: 30px;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.85);
             border-radius: 20px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
@@ -124,11 +138,17 @@
             </li>
             <li class="schedule-item">
                 <span class="time">18:30</span>
-                <span class="description">저녁 식사 (횟집)</span>
+                <span class="description">
+                    저녁 식사 (횟집)
+                    <img src="https://placehold.co/150x100/caf0f8/333?text=회" alt="싱싱한 회 사진" class="schedule-img">
+                </span>
             </li>
             <li class="schedule-item">
                 <span class="time">20:00</span>
-                <span class="description">바닷가 산책</span>
+                <span class="description">
+                    바닷가 산책
+                    <img src="https://placehold.co/150x100/90e0ef/333?text=해변+야경" alt="바다 야경 사진" class="schedule-img">
+                </span>
             </li>
             <li class="schedule-item">
                 <span class="time">21:00</span>
@@ -146,7 +166,10 @@
             </li>
             <li class="schedule-item">
                 <span class="time">10:00</span>
-                <span class="description">해수욕</span>
+                <span class="description">
+                    해수욕
+                    <img src="https://placehold.co/150x100/00b4d8/fff?text=해수욕장" alt="해수욕장 사진" class="schedule-img">
+                </span>
             </li>
             <li class="schedule-item">
                 <span class="time">13:00</span>
@@ -195,7 +218,7 @@
             <li>야간 낚시</li>
             <li>남포동/자갈치 투어</li>
             <li>수영만 요트투어 + 더베이101 + 해운대 밤바다</li>
-            <li><a href="https://busandabom.net/play/view.nm?menuCd=6&lang=ko&url=play&prg_cd=120&res_no=2025070032&playoftoday=Y">인어공주 뮤지컬(일요일 11:00,13:00,15:00) - 부산예술회관</a></li>
+            <li><a href="https://busandabom.net/play/view.nm?menuCd=6&lang=ko&url=play&prg_cd=120&res_no=2025070032&playoftoday=Y" target="_blank">인어공주 뮤지컬(일요일 11:00,13:00,15:00) - 부산예술회관</a></li>
             <li>광안리 드론쇼</li>
         </ul>
     </div>
